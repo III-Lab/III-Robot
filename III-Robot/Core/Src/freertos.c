@@ -26,7 +26,6 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "stdio.h"
 #include "task_led.h"
 #include "task_key.h"
 /* USER CODE END Includes */
@@ -122,7 +121,6 @@ void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
   /* Infinite loop */
-	
 	vTaskDelete(NULL);
   /* USER CODE END StartDefaultTask */
 }

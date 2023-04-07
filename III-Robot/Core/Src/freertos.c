@@ -27,6 +27,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "stdio.h"
+#include "task_led.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -55,13 +56,6 @@ const osThreadAttr_t defaultTask_attributes = {
   .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityNormal,
 };
-/* Definitions for debugsend */
-osThreadId_t debugsendHandle;
-const osThreadAttr_t debugsend_attributes = {
-  .name = "debugsend",
-  .stack_size = 128 * 4,
-  .priority = (osPriority_t) osPriorityLow1,
-};
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -69,7 +63,6 @@ const osThreadAttr_t debugsend_attributes = {
 /* USER CODE END FunctionPrototypes */
 
 void StartDefaultTask(void *argument);
-void debugSend(void *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -103,11 +96,9 @@ void MX_FREERTOS_Init(void) {
   /* creation of defaultTask */
   defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
 
-  /* creation of debugsend */
-  debugsendHandle = osThreadNew(debugSend, NULL, &debugsend_attributes);
-
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
+  create_led_thread();
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_EVENTS */
@@ -127,31 +118,9 @@ void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
   /* Infinite loop */
-  for(;;)
-  {
-	HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
-    osDelay(500);
-  }
+	
+	vTaskDelete(NULL);
   /* USER CODE END StartDefaultTask */
-}
-
-/* USER CODE BEGIN Header_debugSend */
-/**
-* @brief Function implementing the debugsend thread.
-* @param argument: Not used
-* @retval None
-*/
-/* USER CODE END Header_debugSend */
-void debugSend(void *argument)
-{
-  /* USER CODE BEGIN debugSend */
-  /* Infinite loop */
-  for(;;)
-  {
-	  printf("led toggle \r\n");
-	  osDelay(500);
-  }
-  /* USER CODE END debugSend */
 }
 
 /* Private application code --------------------------------------------------*/

@@ -60,10 +60,16 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define LED1_Pin GPIO_PIN_5
 #define LED1_GPIO_Port GPIOE
+#define LED2_Pin GPIO_PIN_6
+#define LED2_GPIO_Port GPIOE
+#define BEEP_Pin GPIO_PIN_2
+#define BEEP_GPIO_Port GPIOB
 #define Debug_TX_Pin GPIO_PIN_10
 #define Debug_TX_GPIO_Port GPIOB
 #define Debug_RX_Pin GPIO_PIN_11
 #define Debug_RX_GPIO_Port GPIOB
+#define LED3_Pin GPIO_PIN_12
+#define LED3_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

@@ -1,9 +1,9 @@
 Dependencies for Project 'III-Robot', Target 'III-Robot': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
-F (../Core/Src/main.c)(0x642FA71D)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\main.o --depend iii-robot\main.d)
-I (../Core/Inc/main.h)(0x642FA71D)
+F (../Core/Src/main.c)(0x642FE13D)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\main.o --depend iii-robot\main.d)
+I (../Core/Inc/main.h)(0x642FE13D)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -39,7 +39,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x6426698C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6426698D)
-I (../Core/Inc/FreeRTOSConfig.h)(0x642FA71C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x642FE13C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6426698D)
@@ -48,14 +48,14 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6426698D
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x6426698C)
-I (../Core/Inc/usart.h)(0x642FA71D)
-I (../Core/Inc/gpio.h)(0x642FA71B)
+I (../Core/Inc/usart.h)(0x642FE13C)
+I (../Core/Inc/gpio.h)(0x642FE13A)
 I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
-F (../Core/Src/gpio.c)(0x642FABC1)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\gpio.o --depend iii-robot\gpio.d)
-I (../Core/Inc/gpio.h)(0x642FA71B)
-I (../Core/Inc/main.h)(0x642FA71D)
+F (../Core/Src/gpio.c)(0x642FE13A)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\gpio.o --depend iii-robot\gpio.d)
+I (../Core/Inc/gpio.h)(0x642FE13A)
+I (../Core/Inc/main.h)(0x642FE13D)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -89,11 +89,11 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
-F (../Core/Src/freertos.c)(0x642FAB64)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\freertos.o --depend iii-robot\freertos.d)
+F (../Core/Src/freertos.c)(0x642FE13C)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\freertos.o --depend iii-robot\freertos.d)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6426698D)
 I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
 I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
-I (../Core/Inc/FreeRTOSConfig.h)(0x642FA71C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x642FE13C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6426698D)
@@ -101,9 +101,9 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6426698D)
-I (../Core/Inc/main.h)(0x642FA71D)
+I (../Core/Inc/main.h)(0x642FE13D)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -138,12 +138,13 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x6426698C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x6426698C)
 I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
-I (..\Robot\Task\inc\task_led.h)(0x642FAB71)
-F (../Core/Src/usart.c)(0x642FA71D)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\usart.o --depend iii-robot\usart.d)
-I (../Core/Inc/usart.h)(0x642FA71D)
-I (../Core/Inc/main.h)(0x642FA71D)
+I (..\Robot\Task\inc\task_led.h)(0x642FCCB7)
+I (..\Robot\Task\inc\task_key.h)(0x642FCF54)
+F (../Core/Src/usart.c)(0x642FE13C)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\usart.o --depend iii-robot\usart.d)
+I (../Core/Inc/usart.h)(0x642FE13C)
+I (../Core/Inc/main.h)(0x642FE13D)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -178,10 +179,10 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
 I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
-F (../Core/Src/stm32h7xx_it.c)(0x642FA71D)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\stm32h7xx_it.o --depend iii-robot\stm32h7xx_it.d)
-I (../Core/Inc/main.h)(0x642FA71D)
+F (../Core/Src/stm32h7xx_it.c)(0x642FE13C)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\stm32h7xx_it.o --depend iii-robot\stm32h7xx_it.d)
+I (../Core/Inc/main.h)(0x642FE13D)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -215,11 +216,11 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_it.h)(0x642FA71D)
-F (../Core/Src/stm32h7xx_hal_msp.c)(0x642FA71D)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\stm32h7xx_hal_msp.o --depend iii-robot\stm32h7xx_hal_msp.d)
-I (../Core/Inc/main.h)(0x642FA71D)
+I (../Core/Inc/stm32h7xx_it.h)(0x642FE13C)
+F (../Core/Src/stm32h7xx_hal_msp.c)(0x642FE13C)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\stm32h7xx_hal_msp.o --depend iii-robot\stm32h7xx_hal_msp.d)
+I (../Core/Inc/main.h)(0x642FE13D)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -253,9 +254,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
-F (../Core/Src/stm32h7xx_hal_timebase_tim.c)(0x642FA71D)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\stm32h7xx_hal_timebase_tim.o --depend iii-robot\stm32h7xx_hal_timebase_tim.d)
+F (../Core/Src/stm32h7xx_hal_timebase_tim.c)(0x642FE13D)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\stm32h7xx_hal_timebase_tim.o --depend iii-robot\stm32h7xx_hal_timebase_tim.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -291,9 +292,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
 F (..\Robot\BSP\src\bsp_beep.c)(0x642F8488)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\bsp_beep.o --depend iii-robot\bsp_beep.d)
 I (..\Robot\BSP\inc\bsp_beep.h)(0x642F84BE)
-I (../Core/Inc/main.h)(0x642FA71D)
+I (../Core/Inc/main.h)(0x642FE13D)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -329,9 +330,9 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
 F (..\Robot\BSP\src\bsp_led.c)(0x642F81C4)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\bsp_led.o --depend iii-robot\bsp_led.d)
 I (..\Robot\BSP\inc\bsp_led.h)(0x642F84BD)
-I (../Core/Inc/main.h)(0x642FA71D)
+I (../Core/Inc/main.h)(0x642FE13D)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -365,13 +366,63 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
+F (..\Robot\BSP\src\bsp_key.c)(0x642FDE31)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\bsp_key.o --depend iii-robot\bsp_key.d)
+I (..\Robot\BSP\inc\bsp_key.h)(0x642FDEFF)
+I (../Core/Inc/main.h)(0x642FE13D)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
+I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
+I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h)(0x64266AD1)
+I (../Drivers/CMSIS/Include/core_cm7.h)(0x64266980)
+I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x64266980)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x64266980)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x64266980)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x64266980)
+I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x64266AD1)
+I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
+I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\math.h)(0x5D9AD212)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
+I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x6426698C)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6426698D)
+I (../Core/Inc/FreeRTOSConfig.h)(0x642FE13C)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6426698D)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6426698D)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6426698D)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x6426698D)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6426698D)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6426698D)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6426698D)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x6426698C)
 F (..\Robot\Task\src\task_led.c)(0x642FC10B)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\task_led.o --depend iii-robot\task_led.d)
-I (..\Robot\Task\inc\task_led.h)(0x642FAB71)
+I (..\Robot\Task\inc\task_led.h)(0x642FCCB7)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x6426698C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6426698D)
 I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
 I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
-I (../Core/Inc/FreeRTOSConfig.h)(0x642FA71C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x642FE13C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6426698D)
@@ -381,9 +432,9 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x6426698C)
 I (..\Robot\BSP\inc\bsp_led.h)(0x642F84BD)
-I (../Core/Inc/main.h)(0x642FA71D)
+I (../Core/Inc/main.h)(0x642FE13D)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -416,10 +467,62 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
 I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
-F (startup_stm32h743xx.s)(0x642FA720)(--cpu Cortex-M7.fp.dp -g --apcs=interwork --pd "__MICROLIB SETA 1" -I ..\Core\Inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include--pd "__UVISION_VERSION SETA 529" --pd "_RTE_ SETA 1" --pd "STM32H743xx SETA 1"--list startup_stm32h743xx.lst --xref -o iii-robot\startup_stm32h743xx.o --depend iii-robot\startup_stm32h743xx.d)
+F (..\Robot\Task\src\task_key.c)(0x642FE01F)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\task_key.o --depend iii-robot\task_key.d)
+I (..\Robot\Task\inc\task_key.h)(0x642FCF54)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x6426698C)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6426698D)
+I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
+I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
+I (../Core/Inc/FreeRTOSConfig.h)(0x642FE13C)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6426698D)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6426698D)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6426698D)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x6426698D)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x6426698D)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x6426698D)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x6426698D)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x6426698C)
+I (..\Robot\BSP\inc\bsp_key.h)(0x642FDEFF)
+I (../Core/Inc/main.h)(0x642FE13D)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
+I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
+I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h)(0x64266AD1)
+I (../Drivers/CMSIS/Include/core_cm7.h)(0x64266980)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x64266980)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x64266980)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x64266980)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x64266980)
+I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x64266AD1)
+I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\math.h)(0x5D9AD212)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
+I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
+I (..\Robot\BSP\inc\bsp_beep.h)(0x642F84BE)
+I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
+F (startup_stm32h743xx.s)(0x642FE141)(--cpu Cortex-M7.fp.dp -g --apcs=interwork --pd "__MICROLIB SETA 1" -I ..\Core\Inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include--pd "__UVISION_VERSION SETA 529" --pd "_RTE_ SETA 1" --pd "STM32H743xx SETA 1"--list startup_stm32h743xx.lst --xref -o iii-robot\startup_stm32h743xx.o --depend iii-robot\startup_stm32h743xx.d)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c)(0x64266AD2)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\stm32h7xx_hal_cortex.o --depend iii-robot\stm32h7xx_hal_cortex.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -455,7 +558,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c)(0x64266AD2)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\stm32h7xx_hal_rcc.o --depend iii-robot\stm32h7xx_hal_rcc.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -491,7 +594,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c)(0x64266AD2)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\stm32h7xx_hal_rcc_ex.o --depend iii-robot\stm32h7xx_hal_rcc_ex.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -527,7 +630,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c)(0x64266AD2)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\stm32h7xx_hal_flash.o --depend iii-robot\stm32h7xx_hal_flash.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -563,7 +666,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c)(0x64266AD2)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\stm32h7xx_hal_flash_ex.o --depend iii-robot\stm32h7xx_hal_flash_ex.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -599,7 +702,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c)(0x64266AD2)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\stm32h7xx_hal_gpio.o --depend iii-robot\stm32h7xx_hal_gpio.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -635,7 +738,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c)(0x64266AD2)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\stm32h7xx_hal_hsem.o --depend iii-robot\stm32h7xx_hal_hsem.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -671,7 +774,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c)(0x64266AD2)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\stm32h7xx_hal_dma.o --depend iii-robot\stm32h7xx_hal_dma.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -707,7 +810,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c)(0x64266AD2)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\stm32h7xx_hal_dma_ex.o --depend iii-robot\stm32h7xx_hal_dma_ex.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -743,7 +846,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c)(0x64266AD2)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\stm32h7xx_hal_mdma.o --depend iii-robot\stm32h7xx_hal_mdma.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -779,7 +882,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c)(0x64266AD2)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\stm32h7xx_hal_pwr.o --depend iii-robot\stm32h7xx_hal_pwr.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -815,7 +918,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c)(0x64266AD2)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\stm32h7xx_hal_pwr_ex.o --depend iii-robot\stm32h7xx_hal_pwr_ex.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -851,7 +954,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c)(0x64266AD2)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\stm32h7xx_hal.o --depend iii-robot\stm32h7xx_hal.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -887,7 +990,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c)(0x64266AD2)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\stm32h7xx_hal_i2c.o --depend iii-robot\stm32h7xx_hal_i2c.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -923,7 +1026,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c)(0x64266AD2)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\stm32h7xx_hal_i2c_ex.o --depend iii-robot\stm32h7xx_hal_i2c_ex.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -959,7 +1062,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c)(0x64266AD2)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\stm32h7xx_hal_exti.o --depend iii-robot\stm32h7xx_hal_exti.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -995,7 +1098,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c)(0x64266AD2)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\stm32h7xx_hal_tim.o --depend iii-robot\stm32h7xx_hal_tim.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -1031,7 +1134,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c)(0x64266AD2)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\stm32h7xx_hal_tim_ex.o --depend iii-robot\stm32h7xx_hal_tim_ex.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -1067,7 +1170,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c)(0x64266AD2)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\stm32h7xx_hal_uart.o --depend iii-robot\stm32h7xx_hal_uart.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -1103,7 +1206,7 @@ I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h)(0x64266AD1)
 F (../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c)(0x64266AD2)(--c99 --gnu -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ..\Robot\BSP\inc -I ..\Robot\Task\inc-I.\RTE\_III-Robot-IG:\RJAZ\MDK5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IG:\RJAZ\MDK5\Packs\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx-o iii-robot\stm32h7xx_hal_uart_ex.o --depend iii-robot\stm32h7xx_hal_uart_ex.d)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)(0x64266AD1)
@@ -1148,7 +1251,7 @@ I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x64266980)
 I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x64266980)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x64266AD1)
@@ -1177,7 +1280,7 @@ F (../Middlewares/Third_Party/FreeRTOS/Source/croutine.c)(0x6426698D)(--c99 --gn
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6426698D)
 I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
 I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
-I (../Core/Inc/FreeRTOSConfig.h)(0x642FA71C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x642FE13C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6426698D)
@@ -1191,7 +1294,7 @@ I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5D9AD21A)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6426698D)
 I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
 I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
-I (../Core/Inc/FreeRTOSConfig.h)(0x642FA71C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x642FE13C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6426698D)
@@ -1206,7 +1309,7 @@ I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5D9AD21A)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6426698D)
 I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
 I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
-I (../Core/Inc/FreeRTOSConfig.h)(0x642FA71C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x642FE13C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6426698D)
@@ -1219,7 +1322,7 @@ I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9AD218)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6426698D)
 I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
 I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
-I (../Core/Inc/FreeRTOSConfig.h)(0x642FA71C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x642FE13C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6426698D)
@@ -1233,7 +1336,7 @@ I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
 I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9AD218)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6426698D)
 I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
-I (../Core/Inc/FreeRTOSConfig.h)(0x642FA71C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x642FE13C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6426698D)
@@ -1248,7 +1351,7 @@ I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9AD218)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6426698D)
 I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
 I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
-I (../Core/Inc/FreeRTOSConfig.h)(0x642FA71C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x642FE13C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6426698D)
@@ -1263,7 +1366,7 @@ I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5D9AD21A)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6426698D)
 I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
 I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
-I (../Core/Inc/FreeRTOSConfig.h)(0x642FA71C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x642FE13C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6426698D)
@@ -1281,7 +1384,7 @@ I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
 I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x64266980)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x64266980)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6426698D)
-I (../Core/Inc/FreeRTOSConfig.h)(0x642FA71C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x642FE13C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6426698D)
@@ -1302,7 +1405,7 @@ I (../Drivers/CMSIS/Include/cmsis_version.h)(0x64266980)
 I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x64266980)
 I (../Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h)(0x64266AD1)
-I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FA767)
+I (../Core/Inc/stm32h7xx_hal_conf.h)(0x642FE155)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h)(0x64266AD1)
 I (../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x64266AD1)
@@ -1331,7 +1434,7 @@ I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5D9AD21A)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6426698D)
 I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
 I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
-I (../Core/Inc/FreeRTOSConfig.h)(0x642FA71C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x642FE13C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6426698D)
@@ -1343,7 +1446,7 @@ F (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/port.c)(0x6
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x6426698D)
 I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
 I (G:\RJAZ\MDK5\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
-I (../Core/Inc/FreeRTOSConfig.h)(0x642FA71C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x642FE13C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x6426698D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x6426698D)

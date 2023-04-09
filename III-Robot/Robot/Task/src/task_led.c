@@ -14,7 +14,7 @@ static void led_entry(void *param)
 {
 	for(;;)
 	{
-		LED1_Toggle();
+		LED2_Toggle();
 		osDelay(300);
 	}
 }

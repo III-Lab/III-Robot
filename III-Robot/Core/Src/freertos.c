@@ -28,6 +28,7 @@
 /* USER CODE BEGIN Includes */
 #include "task_led.h"
 #include "task_key.h"
+#include "task_motor.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -101,6 +102,7 @@ void MX_FREERTOS_Init(void) {
   vTaskSuspendAll();
   create_led_thread();
   create_key_thread();
+  create_motor_thread();
   xTaskResumeAll();
   /* USER CODE END RTOS_THREADS */
 

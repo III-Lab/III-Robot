@@ -37,7 +37,7 @@ extern "C" {
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
-
+#define IIIRobot_DEBUG
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/
@@ -70,8 +70,22 @@ void Error_Handler(void);
 #define KEY3_GPIO_Port GPIOI
 #define KEY4_Pin GPIO_PIN_11
 #define KEY4_GPIO_Port GPIOI
+#define MPU6050_SDA_Pin GPIO_PIN_0
+#define MPU6050_SDA_GPIO_Port GPIOF
+#define MPU6050_SCL_Pin GPIO_PIN_1
+#define MPU6050_SCL_GPIO_Port GPIOF
+#define MRB_EN1_Pin GPIO_PIN_0
+#define MRB_EN1_GPIO_Port GPIOA
+#define MLB_EN2_Pin GPIO_PIN_3
+#define MLB_EN2_GPIO_Port GPIOH
+#define MLB_EN1_Pin GPIO_PIN_4
+#define MLB_EN1_GPIO_Port GPIOH
+#define MRT_EN2_Pin GPIO_PIN_5
+#define MRT_EN2_GPIO_Port GPIOH
 #define BEEP_Pin GPIO_PIN_2
 #define BEEP_GPIO_Port GPIOB
+#define MRT_EN1_Pin GPIO_PIN_15
+#define MRT_EN1_GPIO_Port GPIOF
 #define Debug_TX_Pin GPIO_PIN_10
 #define Debug_TX_GPIO_Port GPIOB
 #define Debug_RX_Pin GPIO_PIN_11
@@ -94,8 +108,12 @@ void Error_Handler(void);
 #define EncoderLTA_GPIO_Port GPIOA
 #define EncoderLTB_Pin GPIO_PIN_9
 #define EncoderLTB_GPIO_Port GPIOA
+#define MRB_EN2_Pin GPIO_PIN_10
+#define MRB_EN2_GPIO_Port GPIOA
 #define MRB_PWM_Pin GPIO_PIN_2
 #define MRB_PWM_GPIO_Port GPIOI
+#define MPU6050_INT_Pin GPIO_PIN_3
+#define MPU6050_INT_GPIO_Port GPIOI
 #define EncoderRTA_Pin GPIO_PIN_15
 #define EncoderRTA_GPIO_Port GPIOA
 #define EncoderRTB_Pin GPIO_PIN_3
@@ -106,6 +124,7 @@ void Error_Handler(void);
 #define MRT_PWM_GPIO_Port GPIOI
 #define MLB_PWM_Pin GPIO_PIN_7
 #define MLB_PWM_GPIO_Port GPIOI
+
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
@@ -115,5 +134,3 @@ void Error_Handler(void);
 #endif
 
 #endif /* __MAIN_H */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

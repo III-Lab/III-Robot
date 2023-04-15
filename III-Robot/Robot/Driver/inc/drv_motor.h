@@ -22,6 +22,8 @@ typedef enum
 }eCarDir;	/* 小车运动方向枚举 */
 
 
+void car_set_dir(eCarDir dir);								/* 设置小车方向 */
+eCarDir car_get_dir(void);									/* 获取小车当前运动方向 */
 
 
 

@@ -24,9 +24,9 @@ void create_led_thread(void)
 {
 	led_handle = osThreadNew(led_entry, NULL, &led_attr);
 	if(led_handle == NULL)
-		printf("create led thread failed\r\n");
+		printf("<create> [task]	: led		> 0\r\n");
 	else
-		printf("create led thread success\r\n");
+		printf("<create> [task]	: led		> 1\r\n");
 }
 
 

@@ -24,17 +24,20 @@ void motor_set_enable(eWheel wheel, eWheelState state)
 	
 	switch(w){
 		case Wheel_LT:
-			(s==eWheelEnable)  ? 	HAL_TIM_PWM_Start(&htim8, WHEEL_LT_PWM_CHANNEL): \
-									HAL_TIM_PWM_Stop (&htim8, WHEEL_LT_PWM_CHANNEL);
+			(s==eWheelEnable)  ? 	HAL_TIM_PWM_Start(&WHEEL_LT_PWM_TIM, WHEEL_LT_PWM_CHANNEL): \
+									HAL_TIM_PWM_Stop (&WHEEL_LT_PWM_TIM, WHEEL_LT_PWM_CHANNEL);
 			break;
 		case Wheel_RT:
-
+			(s==eWheelEnable)  ? 	HAL_TIM_PWM_Start(&WHEEL_RT_PWM_TIM, WHEEL_RT_PWM_CHANNEL): \
+									HAL_TIM_PWM_Stop (&WHEEL_RT_PWM_TIM, WHEEL_RT_PWM_CHANNEL);
 			break;
 		case Wheel_LB:
-
+			(s==eWheelEnable)  ? 	HAL_TIM_PWM_Start(&WHEEL_LB_PWM_TIM, WHEEL_LB_PWM_CHANNEL): \
+									HAL_TIM_PWM_Stop (&WHEEL_LB_PWM_TIM, WHEEL_LB_PWM_CHANNEL);
 			break;
-		case WHeel_RB:
-
+		case Wheel_RB:
+			(s==eWheelEnable)  ? 	HAL_TIM_PWM_Start(&WHEEL_RB_PWM_TIM, WHEEL_RB_PWM_CHANNEL): \
+									HAL_TIM_PWM_Stop (&WHEEL_RB_PWM_TIM, WHEEL_RB_PWM_CHANNEL);
 			break;
 		default: break;
 	}
@@ -65,10 +68,55 @@ void motor_set_dir(eWheel wheel, eWheelDir dir)
 			}
 			break;
 		case Wheel_RT:
+			if(d == Wheel_Foreward)
+			{
+				HAL_GPIO_WritePin(WHEEL_RT_EN1_GPIO_Port, WHEEL_RT_EN1_PIN, GPIO_PIN_RESET);
+				HAL_GPIO_WritePin(WHEEL_RT_EN2_GPIO_Port, WHEEL_RT_EN2_PIN, GPIO_PIN_SET);
+			}
+			else if(d == Wheel_Backward)
+			{
+				HAL_GPIO_WritePin(WHEEL_RT_EN1_GPIO_Port, WHEEL_RT_EN1_PIN, GPIO_PIN_SET);
+				HAL_GPIO_WritePin(WHEEL_RT_EN2_GPIO_Port, WHEEL_RT_EN2_PIN, GPIO_PIN_RESET);
+			}
+			else
+			{
+				HAL_GPIO_WritePin(WHEEL_RT_EN1_GPIO_Port, WHEEL_RT_EN1_PIN, GPIO_PIN_RESET);
+				HAL_GPIO_WritePin(WHEEL_RT_EN2_GPIO_Port, WHEEL_RT_EN2_PIN, GPIO_PIN_RESET);
+			}
 			break;
 		case Wheel_LB:
+			if(d == Wheel_Foreward)
+			{
+				HAL_GPIO_WritePin(WHEEL_LB_EN1_GPIO_Port, WHEEL_LB_EN1_PIN, GPIO_PIN_RESET);
+				HAL_GPIO_WritePin(WHEEL_LB_EN2_GPIO_Port, WHEEL_LB_EN2_PIN, GPIO_PIN_SET);
+			}
+			else if(d == Wheel_Backward)
+			{
+				HAL_GPIO_WritePin(WHEEL_LB_EN1_GPIO_Port, WHEEL_LB_EN1_PIN, GPIO_PIN_SET);
+				HAL_GPIO_WritePin(WHEEL_LB_EN2_GPIO_Port, WHEEL_LB_EN2_PIN, GPIO_PIN_RESET);
+			}
+			else
+			{
+				HAL_GPIO_WritePin(WHEEL_LB_EN1_GPIO_Port, WHEEL_LB_EN1_PIN, GPIO_PIN_RESET);
+				HAL_GPIO_WritePin(WHEEL_LB_EN2_GPIO_Port, WHEEL_LB_EN2_PIN, GPIO_PIN_RESET);
+			}
 			break;
-		case WHeel_RB:
+		case Wheel_RB:
+			if(d == Wheel_Foreward)
+			{
+				HAL_GPIO_WritePin(WHEEL_RB_EN1_GPIO_Port, WHEEL_RB_EN1_PIN, GPIO_PIN_RESET);
+				HAL_GPIO_WritePin(WHEEL_RB_EN2_GPIO_Port, WHEEL_RB_EN2_PIN, GPIO_PIN_SET);
+			}
+			else if(d == Wheel_Backward)
+			{
+				HAL_GPIO_WritePin(WHEEL_RB_EN1_GPIO_Port, WHEEL_RB_EN1_PIN, GPIO_PIN_SET);
+				HAL_GPIO_WritePin(WHEEL_RB_EN2_GPIO_Port, WHEEL_RB_EN2_PIN, GPIO_PIN_RESET);
+			}
+			else
+			{
+				HAL_GPIO_WritePin(WHEEL_RB_EN1_GPIO_Port, WHEEL_RB_EN1_PIN, GPIO_PIN_RESET);
+				HAL_GPIO_WritePin(WHEEL_RB_EN2_GPIO_Port, WHEEL_RB_EN2_PIN, GPIO_PIN_RESET);
+			}
 			break;
 			
 		default: break;
@@ -82,13 +130,16 @@ void motor_set_velocity(eWheel wheel, uint32_t velocity)
 	assert_param(velocity <= 1000);
 	switch(w){
 		case Wheel_LT:
-				__HAL_TIM_SetCompare(&htim8, WHEEL_LT_PWM_CHANNEL, v);
+			__HAL_TIM_SetCompare(&WHEEL_LT_PWM_TIM, WHEEL_LT_PWM_CHANNEL, v);
 			break;
 		case Wheel_RT:
+			__HAL_TIM_SetCompare(&WHEEL_RT_PWM_TIM, WHEEL_RT_PWM_CHANNEL, v);
 			break;
 		case Wheel_LB:
+			__HAL_TIM_SetCompare(&WHEEL_LB_PWM_TIM, WHEEL_LB_PWM_CHANNEL, v);
 			break;
-		case WHeel_RB:
+		case Wheel_RB:
+			__HAL_TIM_SetCompare(&WHEEL_RB_PWM_TIM, WHEEL_RB_PWM_CHANNEL, v);
 			break;
 			
 		default: break;

@@ -28,15 +28,15 @@ static void key_entry(void *param)
 			switch (state)
             {
             	case KEY_PRESSED:
-//					printf("key%d KEY_PRESSED\r\n", i+1);
+					printf("key%d KEY_PRESSED\r\n", i+1);
 					BEEP_ON();
             		break;
-//            	case KEY_PRESSING:
-//					printf("key%d KEY_PRESSING\r\n", i+1);
-//            		break;
+            	case KEY_PRESSING:
+					printf("key%d KEY_PRESSING\r\n", i+1);
+            		break;
 				case KEY_RELEASING:
 					BEEP_OFF();
-//					printf("key%d KEY_RELEASING\r\n", i+1);
+					printf("key%d KEY_RELEASING\r\n", i+1);
 					break;
             	default:
             		break;
@@ -50,9 +50,9 @@ void create_key_thread(void)
 {
 	key_handle = osThreadNew(key_entry, NULL, &key_attr);
 	if(key_handle == NULL)
-		printf("create key thread failed\r\n");
+		printf("<create> [task]	: key		> 0\r\n");
 	else
-		printf("create key thread success\r\n");
+		printf("<create> [task]	: key		> 1\r\n");
 }
 
 

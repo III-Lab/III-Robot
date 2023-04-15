@@ -15,11 +15,14 @@
 
 #include "task_motor.h"
 #include "stdio.h"
+#include "tim.h"
+#include "i2c.h"
 #include "bsp_led.h"
 #include "bsp_l298n.h"
 #include "bsp_encoder.h"
+#include "bsp_mpu6050.h"
 
-// g»Ò»Ò
+
 osThreadId_t motor_handle;
 const osThreadAttr_t motor_attr = {
   .name = "motor",
@@ -28,19 +31,62 @@ const osThreadAttr_t motor_attr = {
 };
 
 
+osTimerId_t timer_decoder_handle;
+const osTimerAttr_t time_decoder_attr = {
+  .name = "timer_decoder"
+};
+
+static MPU6050_t MPU6050;
+
+static void timer_decoder_callback(void *param)
+{
+	float vel_LT = encoder_get_velocity(Encoder_LT, 100);
+	eEncoderDir dir_LT = encoder_get_dir(Encoder_LT);
+	
+	float vel_RT = encoder_get_velocity(Encoder_RT, 100);
+	eEncoderDir dir_RT = encoder_get_dir(Encoder_RT);
+	
+	float vel_LB = encoder_get_velocity(Encoder_LB, 100);
+	eEncoderDir dir_LB = encoder_get_dir(Encoder_LB);
+	
+	float vel_RB = encoder_get_velocity(Encoder_RB, 100);
+	eEncoderDir dir_RB = encoder_get_dir(Encoder_RB);
+	
+	printf("---------- motor state --------- \r\n");
+	printf("vel_LT = %.3f r/s, dir = %s\r\n", vel_LT, (dir_LT==eEncoderForeward)?"foreward":"backward");
+	printf("vel_RT = %.3f r/s, dir = %s\r\n", vel_RT, (dir_LT==eEncoderForeward)?"foreward":"backward");
+	printf("vel_LB = %.3f r/s, dir = %s\r\n", vel_LB, (dir_LT==eEncoderForeward)?"foreward":"backward");
+	printf("vel_RB = %.3f r/s, dir = %s\r\n", vel_RB, (dir_LT==eEncoderForeward)?"foreward":"backward");
+	
+}
+
 static void motor_entry(void *param)
 {
 	motor_set_velocity(Wheel_LT, 500);
 	motor_set_enable(Wheel_LT, eWheelEnable);
 	motor_set_dir(Wheel_LT, Wheel_Foreward);
 	
+	motor_set_velocity(Wheel_RT, 500);
+	motor_set_enable(Wheel_RT, eWheelEnable);
+	motor_set_dir(Wheel_RT, Wheel_Foreward);
+	
+	motor_set_velocity(Wheel_LB, 500);
+	motor_set_enable(Wheel_LB, eWheelEnable);
+	motor_set_dir(Wheel_LB, Wheel_Foreward);
+	
+	motor_set_velocity(Wheel_RB, 500);
+	motor_set_enable(Wheel_RB, eWheelEnable);
+	motor_set_dir(Wheel_RB, Wheel_Foreward);
+	
 	encoder_set_enable(Encoder_LT, eEncoderEnable);
+	encoder_set_enable(Encoder_RT, eEncoderEnable);
+	encoder_set_enable(Encoder_LB, eEncoderEnable);
+	encoder_set_enable(Encoder_RB, eEncoderEnable);
+
 	
 	for(;;)
 	{
-		
-		LED3_Toggle();
-		print_encoder();
+		LED1_Toggle();
 		osDelay(500);
 	}
 }
@@ -49,9 +95,37 @@ static void motor_entry(void *param)
 void create_motor_thread(void)
 {
 	motor_handle = osThreadNew(motor_entry, NULL, &motor_attr);
-	if(motor_handle == NULL)
-		printf("create motor thread failed\r\n");
+	timer_decoder_handle = osTimerNew(	timer_decoder_callback, 
+										osTimerPeriodic, 
+										NULL, 
+										&time_decoder_attr);
+	
+	if(timer_decoder_handle == NULL)
+		printf("<create> [timer] : decoder	> 0\r\n");
 	else
-		printf("create motor thread success\r\n");
+	{
+		printf("<create> [timer] : decoder	> 1\r\n");
+		osTimerStart(timer_decoder_handle, 100);
+	}
+
+
+	
+	if(motor_handle == NULL)
+		printf("<create> [task]	: motor		> 0\r\n");
+	else
+		printf("<create> [task]	: motor		> 1\r\n");
 }
+
+
+/*
+	while(MPU6050_Init(&hi2c2) == 1)
+	{
+		LED1_Toggle();
+		osDelay(200);
+	}
+		// https://www.hackster.io/Kenan-Paralija/making-a-2wd-arduino-vehicle-drive-straight-ae40ee
+
+		MPU6050_Read_All(&hi2c2, &MPU6050);
+		MPU6050_Print(&MPU6050);
+*/
 

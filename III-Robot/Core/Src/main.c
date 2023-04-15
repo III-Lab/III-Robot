@@ -20,6 +20,8 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "cmsis_os.h"
+#include "dma.h"
+#include "i2c.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
@@ -95,23 +97,25 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_USART3_UART_Init();
-  MX_TIM1_Init();
-  MX_TIM2_Init();
+  MX_DMA_Init();
   MX_TIM3_Init();
   MX_TIM5_Init();
   MX_TIM8_Init();
+  MX_I2C2_Init();
+  MX_USART3_UART_Init();
+  MX_TIM1_Init();
+  MX_TIM2_Init();
+  MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
-	HAL_GPIO_WritePin(MLT_EN2_GPIO_Port,MLT_EN2_Pin,GPIO_PIN_SET);
-	HAL_GPIO_WritePin(MLT_EN1_GPIO_Port,MLT_EN1_Pin,GPIO_PIN_SET);
+
   /* USER CODE END 2 */
 
   /* Init scheduler */
   osKernelInitialize();  /* Call init function for freertos objects (in freertos.c) */
   MX_FREERTOS_Init();
+
   /* Start scheduler */
   osKernelStart();
-
   /* We should never get here as control is now taken by the scheduler */
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
@@ -137,11 +141,13 @@ void SystemClock_Config(void)
   /** Supply configuration update enable
   */
   HAL_PWREx_ConfigSupply(PWR_LDO_SUPPLY);
+
   /** Configure the main internal regulator output voltage
   */
   __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
 
   while(!__HAL_PWR_GET_FLAG(PWR_FLAG_VOSRDY)) {}
+
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
@@ -161,6 +167,7 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+
   /** Initializes the CPU, AHB and APB buses clocks
   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
@@ -184,7 +191,7 @@ void SystemClock_Config(void)
 
 /* USER CODE END 4 */
 
- /**
+/**
   * @brief  Period elapsed callback in non blocking mode
   * @note   This function is called  when TIM17 interrupt took place, inside
   * HAL_TIM_IRQHandler(). It makes a direct call to HAL_IncTick() to increment
@@ -236,5 +243,3 @@ void assert_failed(uint8_t *file, uint32_t line)
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

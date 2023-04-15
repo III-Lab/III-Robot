@@ -8,6 +8,17 @@
 
 #include "main.h"
 
+#define Encoder_LT_TIM		htim1
+#define Encoder_RT_TIM		htim2
+#define Encoder_LB_TIM		htim3
+#define Encoder_RB_TIM		htim5
+
+
+#define ENCODER_LINES	500	/* GMR±àÂëÆ÷500Ïß */
+#define MOTOR_LINES		27
+
+#define CALC_VELO(m)	1000/ENCODER_LINES/MOTOR_LINES/4/m
+
 typedef enum
 {
 	eEncoderEnable,
@@ -22,11 +33,16 @@ typedef enum
 	Encoder_RB,
 }eEncoder;
 
+typedef enum
+{
+	eEncoderForeward,
+	eEncoderBackward,
+}eEncoderDir;
+
 void encoder_set_enable(eEncoder encoder, eEncoderState state);
+float encoder_get_velocity(eEncoder encoder, uint16_t t_ms);
+eEncoderDir encoder_get_dir(eEncoder encoder);
 
-
-
-void print_encoder(void);
 #endif /* __BSP_ENCODER_H */
 
 

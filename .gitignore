@@ -4,6 +4,7 @@ docs/
 tools/
 *.vsdx
 *.htm
+*.F_188
 
 # Prerequisites
 *.d

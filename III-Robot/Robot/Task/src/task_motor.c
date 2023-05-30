@@ -22,7 +22,9 @@
 #include "bsp_encoder.h"
 #include "bsp_mpu6050.h"
 
-
+/**
+ * 电机运行任务
+ */
 osThreadId_t motor_handle;
 const osThreadAttr_t motor_attr = {
   .name = "motor",
@@ -30,7 +32,9 @@ const osThreadAttr_t motor_attr = {
   .priority = (osPriority_t) osPriorityLow1,
 };
 
-
+/**
+ * 编码器软定时器
+*/
 osTimerId_t timer_decoder_handle;
 const osTimerAttr_t time_decoder_attr = {
   .name = "timer_decoder"
@@ -40,43 +44,73 @@ static MPU6050_t MPU6050;
 
 static void timer_decoder_callback(void *param)
 {
-	float vel_LT = encoder_get_velocity(Encoder_LT, 100);
+
+	
+	short counter_LT = encoder_get_counter(Encoder_LT, 100);
 	eEncoderDir dir_LT = encoder_get_dir(Encoder_LT);
 	
-	float vel_RT = encoder_get_velocity(Encoder_RT, 100);
+	short counter_RT = encoder_get_counter(Encoder_RT, 100);
 	eEncoderDir dir_RT = encoder_get_dir(Encoder_RT);
 	
-	float vel_LB = encoder_get_velocity(Encoder_LB, 100);
+	short counter_LB = encoder_get_counter(Encoder_LB, 100);
 	eEncoderDir dir_LB = encoder_get_dir(Encoder_LB);
 	
-	float vel_RB = encoder_get_velocity(Encoder_RB, 100);
+	short counter_RB = encoder_get_counter(Encoder_RB, 100);
 	eEncoderDir dir_RB = encoder_get_dir(Encoder_RB);
 	
 	printf("---------- motor state --------- \r\n");
-	printf("vel_LT = %.3f r/s, dir = %s\r\n", vel_LT, (dir_LT==eEncoderForeward)?"foreward":"backward");
-	printf("vel_RT = %.3f r/s, dir = %s\r\n", vel_RT, (dir_LT==eEncoderForeward)?"foreward":"backward");
-	printf("vel_LB = %.3f r/s, dir = %s\r\n", vel_LB, (dir_LT==eEncoderForeward)?"foreward":"backward");
-	printf("vel_RB = %.3f r/s, dir = %s\r\n", vel_RB, (dir_LT==eEncoderForeward)?"foreward":"backward");
+	printf("counter_LT = %d, dir = %s\r\n", counter_LT, (dir_LT==eEncoderForeward)?"foreward":"backward");
+	printf("counter_RT = %d, dir = %s\r\n", counter_RT, (dir_RT==eEncoderForeward)?"foreward":"backward");
+	printf("counter_LB = %d, dir = %s\r\n", counter_LB, (dir_LB==eEncoderForeward)?"foreward":"backward");
+	printf("counter_RB = %d, dir = %s\r\n", counter_RB, (dir_RB==eEncoderForeward)?"foreward":"backward");
+
+	
 	
 }
+/*
 
+
+---------- motor state --------- Wheel_Foreward
+
+Encoder_LT : -209
+Encoder_RT : -186
+Encoder_LB : -198
+Encoder_RB : -256
+vel_LT = -0.039 r/s, dir = foreward
+vel_RT = -0.034 r/s, dir = foreward
+vel_LB = -0.037 r/s, dir = foreward
+vel_RB = -0.047 r/s, dir = foreward
+
+
+---------- motor state --------- Wheel_Backward
+
+Encoder_LT : 191
+Encoder_RT : 183
+Encoder_LB : 237
+Encoder_RB : 258
+vel_LT = 0.035 r/s, dir = backward
+vel_RT = 0.034 r/s, dir = backward
+vel_LB = 0.044 r/s, dir = backward
+vel_RB = 0.048 r/s, dir = backward
+
+*/
 static void motor_entry(void *param)
 {
-	motor_set_velocity(Wheel_LT, 500);
+	motor_set_velocity(Wheel_LT, 500);				
 	motor_set_enable(Wheel_LT, eWheelEnable);
 	motor_set_dir(Wheel_LT, Wheel_Foreward);
 	
-	motor_set_velocity(Wheel_RT, 500);
+	motor_set_velocity(Wheel_RT, 500);       		
 	motor_set_enable(Wheel_RT, eWheelEnable);
-	motor_set_dir(Wheel_RT, Wheel_Foreward);
-	
-	motor_set_velocity(Wheel_LB, 500);
+	motor_set_dir(Wheel_RT, Wheel_Backward);
+
+	motor_set_velocity(Wheel_LB, 500);				
 	motor_set_enable(Wheel_LB, eWheelEnable);
-	motor_set_dir(Wheel_LB, Wheel_Foreward);
-	
-	motor_set_velocity(Wheel_RB, 500);
+	motor_set_dir(Wheel_LB, Wheel_Backward);
+
+	motor_set_velocity(Wheel_RB, 500);				
 	motor_set_enable(Wheel_RB, eWheelEnable);
-	motor_set_dir(Wheel_RB, Wheel_Foreward);
+	motor_set_dir(Wheel_RB, Wheel_Backward);
 	
 	encoder_set_enable(Encoder_LT, eEncoderEnable);
 	encoder_set_enable(Encoder_RT, eEncoderEnable);
@@ -95,6 +129,7 @@ static void motor_entry(void *param)
 void create_motor_thread(void)
 {
 	motor_handle = osThreadNew(motor_entry, NULL, &motor_attr);
+	
 	timer_decoder_handle = osTimerNew(	timer_decoder_callback, 
 										osTimerPeriodic, 
 										NULL, 

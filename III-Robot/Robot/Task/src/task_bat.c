@@ -15,7 +15,7 @@
 **--------------------------------------------------------------------------------------------------------*/
 
 #include "task_bat.h"
-
+#include "bsp_relay.h"
 #include "bsp_ina226.h"
 #include "stdio.h"
 
@@ -36,12 +36,15 @@ static void bat_entry(void *param)
 {
 	uint8_t ret;
 	float number;
+	
 	ina226_uart_initEx();
 	
 	for(;;)
 	{
+		ina226_uart_rx_restart();
 		ina226_uart_printf("%s\r\n", INA226_GET_VOLTAGE);	/* 获取输入电压值 */
-		osDelay(50);
+		osDelay(100);
+		number = 0;
 		ret = ina226_get_response(&number);
 		if(ret != 0 )
 		{
@@ -52,8 +55,10 @@ static void bat_entry(void *param)
 			printf("volatge = %.3f\r\n", number);
 		}
 		
+		ina226_uart_rx_restart();
 		ina226_uart_printf("%s\r\n", INA226_GET_CURRENT);	/* 获取输入电流值 */
-		osDelay(50);
+		osDelay(100);
+		number = 0;
 		ret = ina226_get_response(&number);
 		if(ret != 0 )
 		{
@@ -64,8 +69,10 @@ static void bat_entry(void *param)
 			printf("current = %.3f\r\n", number);
 		}
 		
-		ina226_uart_printf("%s\r\n", INA226_GET_POWER);	/* 获取输入电流值 */
-		osDelay(50);
+		ina226_uart_rx_restart();
+		ina226_uart_printf("%s\r\n", INA226_GET_POWER);	/* 获取输入功率值 */
+		osDelay(100);
+		number = 0;
 		ret = ina226_get_response(&number);
 		if(ret != 0 )
 		{

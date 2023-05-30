@@ -103,8 +103,8 @@ void MX_FREERTOS_Init(void) {
   vTaskSuspendAll();
   create_led_thread();
   create_key_thread();
-  //create_motor_thread();
-  create_bat_thread();
+  create_motor_thread();
+//  create_bat_thread();
   xTaskResumeAll();
   /* USER CODE END RTOS_THREADS */
 

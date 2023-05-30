@@ -10,19 +10,36 @@
 ** Created by:               yunke120
 ** Created date:           2023/04/09
 ** Version:                  1.0
-** Descriptions:          
+** Descriptions:   
+
+	电机直径 127mm
+
+
+
 **--------------------------------------------------------------------------------------------------------*/
 
 #include "bsp_encoder.h"
 #include "tim.h"
 #include "stdio.h"
 
+/**
+ * @brief 求绝对值
+ * 
+ * @param val 
+ * @return uint32_t 
+ */
 static inline uint32_t _abs_(int32_t val)
 {
 	if(val < 0) return -val;
 	return val;
 }
 
+/**
+ * @brief 设置编码器使能函数
+ * 
+ * @param encoder 编码器类型
+ * @param state 使能状态	
+ */
 void encoder_set_enable(eEncoder encoder, eEncoderState state)
 {
 	eEncoder		e = encoder;
@@ -52,52 +69,71 @@ void encoder_set_enable(eEncoder encoder, eEncoderState state)
     }
 }
 
-/* 获取速度 ，单位s */
-float encoder_get_velocity(eEncoder encoder, uint16_t t_ms)
+/**
+ * @brief 获取编码器计数值
+ * 
+ * @param encoder 编码器类型
+ * @param t_ms 间隔时间ms
+ * @return short 计数值
+ */
+short encoder_get_counter(eEncoder encoder, uint16_t t_ms)
 {
-	eEncoder		 e = encoder;
-	uint32_t		 vel = 0;
-	static	uint32_t old_val1;
-	
+	eEncoder		e = encoder;
+	short		 	vel = 0;
+
 	switch(e)
 	{
 		case Encoder_LT:
 		{
-			uint32_t cur_val = (__HAL_TIM_GET_COUNTER(&Encoder_LT_TIM));//获取encoder编码器的计数值
-			vel = _abs_(cur_val - old_val1);
-			old_val1 = cur_val;
+			vel = (__HAL_TIM_GET_COUNTER(&Encoder_LT_TIM));//获取encoder编码器的计数值
+			__HAL_TIM_SET_COUNTER(&Encoder_LT_TIM, 0);
 		}
 			break;
 		case Encoder_RT:
 		{
-			uint32_t cur_val = (__HAL_TIM_GET_COUNTER(&Encoder_RT_TIM));//获取encoder编码器的计数值
-			vel = _abs_(cur_val - old_val1);
-			old_val1 = cur_val;
+			vel = (__HAL_TIM_GET_COUNTER(&Encoder_RT_TIM));//获取encoder编码器的计数值
+			__HAL_TIM_SET_COUNTER(&Encoder_RT_TIM, 0);
 		}
 			break;
 		case Encoder_LB:
 		{
-			uint32_t cur_val = (__HAL_TIM_GET_COUNTER(&Encoder_LB_TIM));//获取encoder编码器的计数值
-			vel = _abs_(cur_val - old_val1);
-			old_val1 = cur_val;
+			vel = (__HAL_TIM_GET_COUNTER(&Encoder_LB_TIM));//获取encoder编码器的计数值
+			__HAL_TIM_SET_COUNTER(&Encoder_LB_TIM, 0);
 		}
 			break;
 		case Encoder_RB:
 		{
-			uint32_t cur_val = (__HAL_TIM_GET_COUNTER(&Encoder_RB_TIM));//获取encoder编码器的计数值
-			vel = _abs_(cur_val - old_val1);
-			old_val1 = cur_val;
+			vel = (__HAL_TIM_GET_COUNTER(&Encoder_RB_TIM));//获取encoder编码器的计数值
+			__HAL_TIM_SET_COUNTER(&Encoder_RB_TIM, 0);
 		}
 			break;
 	}
-	
-	return (float)vel*CALC_VELO(t_ms); 
+
+	return vel; 
 }
 
+/**
+ * @brief 获取编码器速度
+ * 
+ * @param encoder 
+ * @param counter 
+ * @return float 
+ */
+float encoder_get_velocity(eEncoder encoder, short counter)
+{
+	return 0.0f;
+}
+
+/**
+ * @brief 获取编码器方向
+ * 
+ * @param encoder 编码器类型
+ * @return eEncoderDir 方向枚举
+ */
 eEncoderDir encoder_get_dir(eEncoder encoder)
 {
 	eEncoder	e = encoder;
-	int			dir;
+	int			dir = 0;
 	
 	switch(e)
 	{

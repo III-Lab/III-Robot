@@ -1,6 +1,9 @@
-
+III-Robot/Drivers/CMSIS/DSP/
+III-Robot/MDK-ARM/III-Robot/
 docs/
+tools/
 *.vsdx
+*.htm
 
 # Prerequisites
 *.d

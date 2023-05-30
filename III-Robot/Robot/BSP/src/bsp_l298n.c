@@ -16,7 +16,12 @@
 #include "bsp_l298n.h"
 #include "tim.h"
 
-
+/**
+ * @brief 设置电机使能
+ * 
+ * @param wheel 轮子枚举 
+ * @param state 状态枚举
+ */
 void motor_set_enable(eWheel wheel, eWheelState state)
 {
 	eWheel		w = wheel;
@@ -43,8 +48,12 @@ void motor_set_enable(eWheel wheel, eWheelState state)
 	}
 }
 
-
-
+/**
+ * @brief 设置电机方向
+ * 
+ * @param wheel 轮子枚举
+ * @param dir 方向枚举
+ */
 void motor_set_dir(eWheel wheel, eWheelDir dir)
 {
 	eWheel 		w = wheel;
@@ -123,6 +132,12 @@ void motor_set_dir(eWheel wheel, eWheelDir dir)
 	}
 }
 
+/**
+ * @brief 设置电机速度
+ * 
+ * @param wheel 轮子枚举
+ * @param velocity 速度值[0,1000]
+ */
 void motor_set_velocity(eWheel wheel, uint32_t velocity)
 {
 	eWheel 		w = wheel;

@@ -3,7 +3,7 @@
 
 #include "main.h"
 
-#define KEY_DEBOUNCE_DELAY 120  // 消抖时间，单位为毫秒
+#define KEY_DEBOUNCE_DELAY 70  // 消抖时间，单位为毫秒
 
 // 定义按键状态枚举类型
 typedef enum {

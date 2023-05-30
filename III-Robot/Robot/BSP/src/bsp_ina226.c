@@ -10,7 +10,14 @@
 ** Created by:               yunke120
 ** Created date:           2023/04/15
 ** Version:                  1.0
-** Descriptions:          
+** Descriptions:         
+** 
+
+	GND			GND(黑色)
+	PD5(TX)		RX(棕色)
+	PD6(RX)		TX(白色)
+	VCC			VCC(红色)
+	
 **--------------------------------------------------------------------------------------------------------*/
 
 
@@ -22,10 +29,6 @@
 #include <stdlib.h>
 
 
-
-
-
-#if 1
 
 extern UART_HandleTypeDef huart2;
 uint8_t rx_temp;
@@ -42,7 +45,10 @@ static struct
 
 static uint8_t g_uart_tx_buf[INA226_UART_TX_BUF_SIZE]; 		/* INA226 UART发送缓冲 */
 
-
+/**
+ * @brief 电源管理INA226模块初始化
+ * 
+ */
 void ina226_uart_initEx(void)
 {
 	ina226_uart_rx_restart();
@@ -55,6 +61,12 @@ void ina226_uart_initEx(void)
 	
 }
 
+/**
+ * @brief 串口2打印
+ * 
+ * @param fmt 
+ * @param ... 
+ */
 void ina226_uart_printf(char *fmt, ...)
 {
     va_list ap;
@@ -68,7 +80,10 @@ void ina226_uart_printf(char *fmt, ...)
     HAL_UART_Transmit(&huart2, g_uart_tx_buf, len, HAL_MAX_DELAY);
 }
 
-
+/**
+ * @brief 接收复位，每一次发送前需调用
+ * 
+ */
 void ina226_uart_rx_restart(void)
 {
 	memset(g_uart_rx_frame.buf, 0, g_uart_rx_frame.sta.len);
@@ -76,8 +91,10 @@ void ina226_uart_rx_restart(void)
     g_uart_rx_frame.sta.finsh   = 0;
 }
 
-
-
+/**
+ * @brief 串口2中断函数
+ * 
+ */
 void INA226_USART_IRQHandler(void)
 {
 	if(__HAL_UART_GET_FLAG(&huart2,UART_FLAG_RXNE)!= RESET) { // 接收中断：接收到数据
@@ -102,17 +119,28 @@ void INA226_USART_IRQHandler(void)
 			__HAL_UART_DISABLE_IT(&huart2,UART_IT_IDLE); 
 			g_uart_rx_frame.buf[g_uart_rx_frame.sta.len] = '\0';
 			g_uart_rx_frame.sta.finsh = 1; 
+			// printf("RX: %s\r\n", g_uart_rx_frame.buf);
 	}
 	HAL_UART_IRQHandler(&huart2);
 }
 
+/**
+ * @brief 获取接收完成标志位
+ * 
+ * @return uint8_t 
+ */
 uint8_t	ina226_get_finish_flag(void)
 {
 	return g_uart_rx_frame.sta.finsh;
 }
 
 
-
+/**
+ * @brief 解析接收数据
+ * 
+ * @param data 解析值
+ * @return uint8_t 0：解析成功；1：解析失败
+ */
 uint8_t ina226_get_response(float * data)
 {
 	if(g_uart_rx_frame.sta.finsh == 0)	return 1;	
@@ -123,9 +151,6 @@ uint8_t ina226_get_response(float * data)
 	return 0;
 }
 
-
-
-#endif
 
 
 

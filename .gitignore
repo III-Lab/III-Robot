@@ -2,6 +2,8 @@ III-Robot/Drivers/CMSIS/DSP/
 III-Robot/MDK-ARM/III-Robot/
 docs/
 tools/
+Test/
+Tutorials/
 *.vsdx
 *.htm
 *.F_188

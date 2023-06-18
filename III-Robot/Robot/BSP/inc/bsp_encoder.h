@@ -14,10 +14,17 @@
 #define Encoder_RB_TIM		htim1
 
 
-#define ENCODER_LINES	500	/* GMR编码器500线 */
-#define MOTOR_LINES		27
+#define ENCODER_LINES	13		/* GMR编码器500线 */
+#define MOTOR_LINES		27  	/* 电机减速比 */
+#define ECONDER_TIMING	100		/* ms */
+/*
+	电机转一圈的脉冲数：500*4*27 = 54000
+*/
 
-#define CALC_VELO(m)	1000/ENCODER_LINES/MOTOR_LINES/4/m
+#define CALC_VELO	1000/(ENCODER_LINES*MOTOR_LINES*ECONDER_TIMING*4)
+
+#define VelocityMin		520
+#define VelocityMax		1000
 
 typedef enum
 {

@@ -121,7 +121,33 @@ short encoder_get_counter(eEncoder encoder, uint16_t t_ms)
  */
 float encoder_get_velocity(eEncoder encoder, short counter)
 {
-	return 0.0f;
+	eEncoder		e = encoder;
+	float		 	vel = 0.0f;
+
+	switch(e)
+	{
+		case Encoder_LT:
+		{
+			vel = (float)CALC_VELO * (float)counter;
+		}
+			break;
+		case Encoder_RT:
+		{
+			vel = (float)CALC_VELO * (float)counter;
+		}
+			break;
+		case Encoder_LB:
+		{
+			vel = (float)CALC_VELO * (float)counter;
+		}
+			break;
+		case Encoder_RB:
+		{
+			vel = (float)CALC_VELO * (float)counter;
+		}
+			break;
+	}
+	return vel;
 }
 
 /**

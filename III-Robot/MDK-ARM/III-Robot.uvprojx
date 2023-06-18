@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32H743xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Drivers/CMSIS/Device/ST/STM32H7xx/Include;../Drivers/CMSIS/Include;../Robot/BSP/inc;../Robot/Task/inc;../Robot/Driver/inc</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Drivers/CMSIS/Device/ST/STM32H7xx/Include;../Drivers/CMSIS/Include;../Robot/BSP/inc;../Robot/Task/inc;../Robot/App/inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -662,29 +662,49 @@
               <FilePath>..\Robot\BSP\src\bsp_l298n.c</FilePath>
             </File>
             <File>
-              <FileName>bsp_encoder.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Robot\BSP\src\bsp_encoder.c</FilePath>
-            </File>
-            <File>
               <FileName>bsp_mpu6050.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Robot\BSP\src\bsp_mpu6050.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_encoder.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Robot\BSP\src\bsp_encoder.c</FilePath>
             </File>
             <File>
               <FileName>bsp_ina226.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Robot\BSP\src\bsp_ina226.c</FilePath>
             </File>
+            <File>
+              <FileName>bsp_imu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Robot\BSP\src\bsp_imu.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_protocol.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Robot\BSP\src\bsp_protocol.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
-          <GroupName>Robot/Driver</GroupName>
+          <GroupName>Robot/App</GroupName>
           <Files>
             <File>
-              <FileName>drv_motor.c</FileName>
+              <FileName>pid.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Robot\Driver\src\drv_motor.c</FilePath>
+              <FilePath>..\Robot\App\src\pid.c</FilePath>
+            </File>
+            <File>
+              <FileName>robot.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Robot\App\src\robot.c</FilePath>
+            </File>
+            <File>
+              <FileName>protocol.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Robot\App\src\protocol.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -702,14 +722,24 @@
               <FilePath>..\Robot\Task\src\task_key.c</FilePath>
             </File>
             <File>
-              <FileName>task_motor.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Robot\Task\src\task_motor.c</FilePath>
-            </File>
-            <File>
               <FileName>task_bat.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Robot\Task\src\task_bat.c</FilePath>
+            </File>
+            <File>
+              <FileName>task_imu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Robot\Task\src\task_imu.c</FilePath>
+            </File>
+            <File>
+              <FileName>task_protocol.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Robot\Task\src\task_protocol.c</FilePath>
+            </File>
+            <File>
+              <FileName>task_robot.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Robot\Task\src\task_robot.c</FilePath>
             </File>
           </Files>
         </Group>

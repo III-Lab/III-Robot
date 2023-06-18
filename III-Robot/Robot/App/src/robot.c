@@ -13,11 +13,11 @@
 ** Descriptions:          
 **--------------------------------------------------------------------------------------------------------*/
 
-#include "drv_motor.h"
+#include "robot.h"
 
 
 /* 定义小车运动方向，默认停止 */
-static eCarDir g_Car_Dir = Car_Stop;
+static eRobotDir g_robot_Dir = Robot_Stop;
 
 
 /**
@@ -25,77 +25,77 @@ static eCarDir g_Car_Dir = Car_Stop;
  * 
  * @param dir 小车方向
  */
-void car_set_dir(eCarDir dir)
+void robot_set_dir(eRobotDir dir)
 {
-	eCarDir r = dir;
-	if(g_Car_Dir == r)	return;
+	eRobotDir r = dir;
+	if(g_robot_Dir == r)	return;
 	switch(r)
 	{
-		case Car_Stop:	/* 停止 */
+		case Robot_Stop:	/* 停止 */
 			motor_set_dir(Wheel_LT, Wheel_Stop);
 			motor_set_dir(Wheel_RT, Wheel_Stop);
 			motor_set_dir(Wheel_LB, Wheel_Stop);
 			motor_set_dir(Wheel_RB, Wheel_Stop);
 			break;
-		case Car_Foreward:	/* 四个轮子同时同速前进 */
+		case Robot_Foreward:	/* 四个轮子同时同速前进 */
 			motor_set_dir(Wheel_LT, Wheel_Foreward);
 			motor_set_dir(Wheel_RT, Wheel_Foreward);
 			motor_set_dir(Wheel_LB, Wheel_Foreward);
 			motor_set_dir(Wheel_RB, Wheel_Foreward);
 			break;
-		case Car_Backward:	/* 四个轮子同时同速后退 */
+		case Robot_Backward:	/* 四个轮子同时同速后退 */
 			motor_set_dir(Wheel_LT, Wheel_Backward);
 			motor_set_dir(Wheel_RT, Wheel_Backward);
 			motor_set_dir(Wheel_LB, Wheel_Backward);
 			motor_set_dir(Wheel_RB, Wheel_Backward);
 			break;
-		case Car_Right:
+		case Robot_Right:
 			motor_set_dir(Wheel_LT, Wheel_Foreward);
 			motor_set_dir(Wheel_RT, Wheel_Backward);
 			motor_set_dir(Wheel_LB, Wheel_Foreward);
 			motor_set_dir(Wheel_RB, Wheel_Backward);
 			break;
-		case Car_Left:
+		case Robot_Left:
 			motor_set_dir(Wheel_LT, Wheel_Backward);
 			motor_set_dir(Wheel_RT, Wheel_Foreward);
 			motor_set_dir(Wheel_LB, Wheel_Backward);
 			motor_set_dir(Wheel_RB, Wheel_Foreward);
 			break;
-		case Car_Shift_Left:
+		case Robot_Shift_Left:
 			motor_set_dir(Wheel_LT, Wheel_Backward);
 			motor_set_dir(Wheel_RT, Wheel_Foreward);
 			motor_set_dir(Wheel_LB, Wheel_Foreward);
 			motor_set_dir(Wheel_RB, Wheel_Backward);
 			break;
-		case Car_Shift_Right:
+		case Robot_Shift_Right:
 			motor_set_dir(Wheel_LT, Wheel_Foreward);
 			motor_set_dir(Wheel_RT, Wheel_Backward);
 			motor_set_dir(Wheel_LB, Wheel_Backward);
 			motor_set_dir(Wheel_RB, Wheel_Foreward);
 			break;
-		case Car_Rotate_Right:
+		case Robot_Rotate_Right:
 			motor_set_dir(Wheel_LT, Wheel_Foreward);
 			motor_set_dir(Wheel_RT, Wheel_Backward);
 			motor_set_dir(Wheel_LB, Wheel_Foreward);
 			motor_set_dir(Wheel_RB, Wheel_Backward);
 			break;
-		case Car_Rotate_Left:
+		case Robot_Rotate_Left:
 			motor_set_dir(Wheel_LT, Wheel_Backward);
 			motor_set_dir(Wheel_RT, Wheel_Foreward);
 			motor_set_dir(Wheel_LB, Wheel_Backward);
 			motor_set_dir(Wheel_RB, Wheel_Foreward);
 			break;
 	}
-	g_Car_Dir = r;
+	g_robot_Dir = r;
 }
 
 /**
  * @brief 获取小车当前运动方向
  * 
- * @return eCarDir 小车方向
+ * @return erobotDir 小车方向
  */
-eCarDir car_get_dir(void)
+eRobotDir robot_get_dir(void)
 {
-	return g_Car_Dir;
+	return g_robot_Dir;
 }
 

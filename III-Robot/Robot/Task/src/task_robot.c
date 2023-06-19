@@ -109,7 +109,7 @@ static void robot_entry(void *param)
 	{
         if(osMessageQueueGet(robotQueueHandle, buf, NULL, osWaitForever) == osOK)
         {
-#if 1
+#if 0
 			printf("robot [RX]: ");
 			for(int i = 0; i < PROTOCOL_MSG_LEN; i++)
 			{
@@ -126,7 +126,6 @@ static void robot_entry(void *param)
 					robot_set_dir((eRobotDir)buf[4]);
 					break;
 			}
-
 		}
 	}
 }

@@ -89,12 +89,17 @@ static float data_trans(uint8_t data_1, uint8_t data_2, uint8_t data_3, uint8_t 
 
 void imu_get_posture(IMU_t *imu)
 {
-	float r = data_trans(imu_rx.buf[7], imu_rx.buf[8], imu_rx.buf[9], imu_rx.buf[10]);
-	float p = data_trans(imu_rx.buf[11], imu_rx.buf[12], imu_rx.buf[13], imu_rx.buf[14]);
-	float h = data_trans(imu_rx.buf[15], imu_rx.buf[16], imu_rx.buf[17], imu_rx.buf[18]);
-	imu->roll    = r * Rad2Degree;
-	imu->pitch   = p * Rad2Degree;
-	imu->heading = h * Rad2Degree;
+	memcpy(imu->raw_roll,    imu_rx.buf + 7,  4);
+	memcpy(imu->raw_pitch,   imu_rx.buf + 11, 4);
+	memcpy(imu->raw_heading, imu_rx.buf + 15, 4);
+	
+	float a = data_trans(imu_rx.buf[7], imu_rx.buf[8], imu_rx.buf[9], imu_rx.buf[10]);
+	float b = data_trans(imu_rx.buf[11], imu_rx.buf[12], imu_rx.buf[13], imu_rx.buf[14]);
+	float c = data_trans(imu_rx.buf[15], imu_rx.buf[16], imu_rx.buf[17], imu_rx.buf[18]);
+	
+	imu->roll    = a * Rad2Degree;
+	imu->pitch   = b * Rad2Degree;
+	imu->heading = c * Rad2Degree;
 }
 
 

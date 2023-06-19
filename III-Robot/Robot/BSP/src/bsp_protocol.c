@@ -56,7 +56,6 @@ void PROTOCOL_USART_IRQHandler(void)
 #endif
 			osMessageQueuePut(protocolQueueHandle, USART1_RX_BUF, 0U, 0U);
 		}
-		
 	} 
 	
 	HAL_UART_IRQHandler(&PROTOCOL_USART_Handle);

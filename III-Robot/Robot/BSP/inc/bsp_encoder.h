@@ -23,7 +23,7 @@
 
 #define CALC_VELO	1000/(ENCODER_LINES*MOTOR_LINES*ECONDER_TIMING*4)
 
-#define VelocityMin		520
+#define VelocityMin		600
 #define VelocityMax		1000
 
 typedef enum

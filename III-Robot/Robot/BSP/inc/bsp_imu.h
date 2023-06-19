@@ -19,6 +19,9 @@ typedef struct {
 }imu_rx_t;
 
 typedef struct {
+	uint8_t raw_roll[4];
+	uint8_t raw_pitch[4];
+	uint8_t raw_heading[4];
 	float roll;
 	float pitch;
 	float heading;

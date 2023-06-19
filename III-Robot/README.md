@@ -47,6 +47,7 @@
 | 0x02 | 吊舱云台 |
 | 0x03 |  机械臂  |
 | 0x04 |   电源   |
+| 0x05 |   IMU    |
 
 ### 命令类型
 
@@ -73,34 +74,9 @@
 
 
 
-**C#串口发送**
+#### IMU(0x05)
 
-```C++
-using System.IO.Ports;
 
-class Program {
-    static void Main(string[] args) {
-        byte[] buf = {0xaa, 0x55, 0x01, 0x01, 0x00, 0x04, 0x05, 0x06, 0x08, 0x09, 0x05, 0xdd};
-        string portName = "COM1";            // 设置端口名
-        int baudRate = 9600;                 // 设置波特率
-        Parity parity = Parity.None;         // 设置奇偶校验位
-        int dataBits = 8;                    // 设置数据位
-        StopBits stopBits = StopBits.One;    // 设置停止位
-
-        using (SerialPort serialPort = new SerialPort(portName, baudRate, parity, dataBits, stopBits)) {
-            try {
-                serialPort.Open();  // 打开串口
-                serialPort.Write(buf, 0, buf.Length);  // 发送数据
-                Console.WriteLine("Data sent successfully.");
-            } catch (Exception ex) {
-                Console.WriteLine("Error: " + ex.Message);
-            } finally {
-                serialPort.Close(); // 关闭串口
-            }
-        }
-    }
-}
-```
 
 
 

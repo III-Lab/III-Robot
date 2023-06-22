@@ -7,7 +7,7 @@
 |  USART1  |   PB14, PB15    |      通信串口      |
 |  USART2  |    PD5, PD6     |  电源检测 INA226   |
 |  USART3  |   PB10, PB11    |      调试串口      |
-|  USART4  |    PG14, PG9    |   IMU姿态传感器    |
+|  USART6  |    PG14, PG9    |   IMU姿态传感器    |
 |          |                 |                    |
 |   TIM1   |     PA8,PA9     |    右下轮编码器    |
 |   TIM2   |    PA15,PB3     |    右上轮编码器    |
@@ -85,4 +85,25 @@
 
 
 
+
+## 线程间通信
+
+
+
+```mermaid
+graph TD
+PC[[PC]]
+A(Task_Protocol)
+B(Task_Robot)
+C(PTZ)
+D(RoboticArm)
+E(Battery)
+F(IMU)
+
+PC-.protocolQueueHandle.->A
+
+A-->|robotQueueHandle|B
+A-->|ptzQueueHandle|C
+A-->|armQueueHandle|D
+```
 
